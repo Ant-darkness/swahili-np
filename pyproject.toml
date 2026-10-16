@@ -1,0 +1,18 @@
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swahili-nlp"
+version = "0.1.0"
+description = "Swahili NLP utilities and stopwords"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+swahili_nlp = ["data/*.txt"]
